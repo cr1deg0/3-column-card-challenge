@@ -1,0 +1,101 @@
+body{
+    background-color: hsl(0, 0%, 95%);
+    /*center card on screen*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    border-radius: 12px;
+    overflow: hidden; /*transfer round borders to flex-div*/
+    max-width: 920px;
+    max-height: 500px;
+}
+#flex-div1{
+    background-color: hsl(31, 77%, 52%);
+    flex: 1;
+    padding: 40px;
+}
+#flex-div1 button{
+    color:hsl(31, 77%, 52%);
+}
+#flex-div1 button:hover{
+    color:hsl(0, 0%, 95%);
+}
+#flex-div2{
+    background-color: hsl(184, 100%, 22%);
+    flex: 1;
+    padding: 40px;
+}
+#flex-div2 button{
+    color: hsl(184, 100%, 22%);
+}
+#flex-div2 button:hover{
+    color: hsl(0, 0%, 95%);
+}
+#flex-div3{
+    background-color: hsl(179, 100%, 13%);
+    flex: 1;
+    padding: 40px;
+}
+#flex-div3 button{
+    color:hsl(184, 100%, 22%)
+}
+#flex-div3 button:hover{
+    color: hsl(0, 0%, 95%);
+}
+img{
+    display: block;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700; 
+    color: hsl(0, 0%, 95%);
+    font-size: 40px;
+}
+p{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.6);
+    margin-bottom: 70px;
+}
+.button{
+    background-color: hsl(0, 0%, 95%);
+    border-style: none;
+    border-radius: 100px 100px 100px 100px;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding: 12px 25px 12px 25px;
+}
+.button:hover{
+    background: inherit;
+    border: 2px solid hsl(0, 0%, 95%);
+    cursor: pointer;
+}
+@media only screen  
+  and (max-device-width: 375px){
+    body{
+        height: 100%;
+        top: 50%;
+        left: 48%; /*cennter horizontally in mobile viewport*/
+        transform: translate(-50%,-48%); 
+    }
+    .flex-container{
+          flex-direction: column;
+          width: 330px;
+          max-height: 1330px;
+      }
+      p{
+          margin-bottom: 20px;
+      }
+  }
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
